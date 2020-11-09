@@ -17,3 +17,44 @@
 .box2-ext {
   border: 10px solid black;
 }
+.box-a {
+  display: flex;
+}
+.box3 {
+  width: 200px;
+  height: 200px;
+}
+.bg1 {
+  background-color: #FFAAAA;
+}
+
+.bg2 {
+  background-color: #FFBBBB;
+}
+
+.bg3 {
+  background-color: #FFCCCC;
+}
+.bg4 {
+  background-color: #FFDDDD;
+}
+
+.box-b {
+  display: flex;
+}
+.box4 {
+  width: 200px;
+  height: 200px;
+}
+.bg5 {
+  background-color: #ffaaff;
+}
+.bg6 {
+  background-color: #ffbbff;
+}
+.bg7 {
+  background-color: #ffccff;
+}
+.bg8 {
+  background-color: #ffddff;
+}

@@ -73,3 +73,42 @@ $(function(){
     $('.box2').removeClass('box2-ext');
   });
 });
+
+$(function(){
+  $('.bg1').on('click', function(){
+    $('.bg1').slideUp();
+  });
+
+  $('.bg2').on('click', function(){
+    $('.bg2').slideUp();
+  });
+
+  $('.bg3').on('click', function(){
+    $('.bg3').slideUp();
+  });
+
+  $('.bg4').on('click', function(){
+    $('.bg4').slideUp();
+  });
+
+});
+// 上記の書き方では、class名が異なるだけで手間がかかる。
+// 下記の書き方では、.box4がクリックされた時、クリックされた要素（.box4以下のdiv)がスライドアップする
+$(function(){
+  $('.box4').on('click', function(){
+    $(this).slideUp();
+  });
+});
+
+$(function(){
+  $('button').on('click', function(){
+    $('ul').children().css({
+      'color': 'red'
+    })
+  });
+  $('button').mouseout(function(){
+    $('ul').children().css({
+      'color': 'black'
+    })
+  });
+});
