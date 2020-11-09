@@ -33,12 +33,43 @@
 // $(function(){
 //   $('.box1').hide();
 // });
+// マウスカーソルがbox1の上に乗った時
+// $(function(){
+//   $('.box1').mouseover(function(){
+//     $('.box1').css({
+//       'background-color': '#0000FF'
+//     });
+//   });
+//   // マウスカーソルが外れた時
+//   $('.box1').mouseout(function(){
+//     $('.box1').css({
+//       'background-color': '#FF0000'
+//     });
+//   });
+// });
 
 $(function(){
-  $('.box2').slideDown();
-  $('.box2').css({
-    'width': '200px',
-    'height': '100px',
-    'background-color': '#0000FF'
-  }).slideUp();
+  $('.box1').mouseover(function(){
+    $('.box1').addClass('box1-ext');
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').removeClass('box1-ext');
+  });
+});
+// addClassでクラスを追加しそのクラスのcssを適用している
+// rimoveClassでクラスを解除
+
+// マウスクリックイベント
+// $('.セレクタ名').on('click', function() {
+//   イベント発生時に行われる処理
+// });
+// .click()ではクリックでした段階でイベントが終了する
+
+$(function(){
+  $('.box2').on('click', function(){
+    $('.box2').addClass('box2-ext');
+  });
+  $('.box2').mouseout(function(){
+    $('.box2').removeClass('box2-ext');
+  });
 });
